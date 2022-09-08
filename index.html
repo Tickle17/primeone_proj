@@ -6,6 +6,26 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/main.css"/>
     <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      ymaps.ready(init);
+      function init(){
+        var myMap = new ymaps.Map("map", {
+          center: [40.74284170421937,-73.92606275389495],
+          zoom: 16
+        });
+        var myGeoObject = new ymaps.GeoObject({
+          geometry: {
+            type: "Point", // тип геометрии - точка
+            coordinates: [40.74284170421937,-73.92606275389495] // координаты точки
+          }
+        });
+
+// Размещение геообъекта на карте.
+        myMap.geoObjects.add(myGeoObject);
+      }
+    </script>
 </head>
 <body>
 <header>
@@ -192,5 +212,23 @@
         </div>
     </div>
 </div>
+<div class="botfooter_map-commit">
+    <div class="botfooter_map" id="map" ></div>
+    <div class="bottooter_BG">
+        <div class="botfooter_commit">
+            <div class="botfooter_commit-title">Get in touch</div>
+            <div class="botfooter_commit-input"><input class="inputtext"   type="text" placeholder="Name"></div>
+            <div class="botfooter_commit-input"><input class="inputtext"   type="email" placeholder="E-mail or phone number"></div>
+            <div class="botfooter_commit-input"><input class="inputtext"   type="text" placeholder="Your message"></div>
+            <div class="commit-button">
+                <div class="commit-button-agree btn">Send message</div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="terms">© PrimeOne Catering 2014. <a style="text-decoration: underline">Terms & Conditions</a></div>
+    <div class="company"><img src="img/logofoot.svg" alt=""></div>
+</footer>
 </body>
 </html>

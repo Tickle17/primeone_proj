@@ -230,6 +230,7 @@ header{
     color: #000000;
     font-size: 1.07vw;
     line-height: 25px;
+    max-width: 185px;
 
 }
 .column-button {
@@ -283,12 +284,11 @@ header{
 
 /*--------------------BOTTOM-MENU-------------------------*/
 .bottom-menu {
-    max-height: 350px;
-    background-color: #ebebeb;
 }
 
 .bottom-conteiner {
     background-color:#ebebeb;
+    height: 350px;
 
 }
 
@@ -440,3 +440,93 @@ header{
 .soc{
     margin: 31px 31px 0px 0px;
 }
+
+
+/*-------------------------botfooter-map-commit____________*/
+
+.botfooter_map-commit {
+    display: flex;
+    margin: 24px 0px 0px 0px;
+}
+
+.botfooter_map {
+width: 50%;
+}
+.custom-map-control-button {
+    background-color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    padding: 0 0.5em;
+    font: 400 18px Roboto, Arial, sans-serif;
+    overflow: hidden;
+    height: 40px;
+    cursor: pointer;
+}
+.custom-map-control-button:hover {
+    background: rgb(235, 235, 235);
+}
+
+.botfooter_commit {
+    padding:54px 0px 50px 60px;
+    width: 50%;
+}
+
+.botfooter_commit-title {
+    color: white;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin: 0px 0px 28px 0px;
+
+}
+
+.botfooter_commit-input {
+    width: 374px;
+    height: 50px;
+    border: 2px solid #959595;
+    background-color: #252525;
+    margin: 0px 0px 25px 0px;
+    padding: 15px 0px 0px 18px;
+}
+.inputtext{
+    background-color: #252525;
+    color: white;
+}
+.commit-button {
+}
+
+.commit-button-agree {
+    margin: 3.93vw 14px 0px 0px;
+    padding: 18px 10px 17px 33px;
+    color: #000000;
+    font-size: 11.1px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 59px 0px 0px 0px;
+    max-width: 880px;
+    margin: 0px auto;
+}
+
+.bottooter_BG{
+    background-color: black;
+    width: 50%;
+    height: auto;
+}
+.terms{
+    color: #4d4d4d;
+    font-size: 15px;
+    line-height: 25px;
+}
+.company{
+    width: 156px;
+    height: 65px;
+}
+
